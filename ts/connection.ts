@@ -1,13 +1,6 @@
-let mysql = require('mysql');
-
-let con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "tindervoorgamers",
-    database: 'thealmightydatabase'
-  });
-  
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-  });
+module.exports = {
+  HOST: "us-cdbr-east-02.cleardb.com",
+  USER: "b324f46f382eb9",
+  PASSWORD: "8dc5aed",
+  DB: "heroku_496c898c5cb1ce2"
+};
