@@ -49,5 +49,17 @@ User.remove = (id, result) => {
   });
 };
 
+User.removeAll = result => {
+  sql.query("DELETE FROM users", (err, res) => {
+    if (err) {
+      console.log("error: ", err);
+      result(null, err);
+      return;
+    }
+
+    console.log(`deleted ${res.affectedRows} users`);
+    result(null, res);
+  });
+};
 
 module.exports = User;

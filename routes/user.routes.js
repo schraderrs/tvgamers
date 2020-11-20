@@ -7,6 +7,8 @@ module.exports = app => {
     app.get("/users", users.findAll);
 
     app.delete("/users/:usersId", users.delete);
+
+    app.delete("/users", users.deleteAll);
   
     // // Retrieve all Customers
     // app.get("/users", users.findAll);
