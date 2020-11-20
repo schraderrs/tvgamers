@@ -18,9 +18,9 @@ app.get("/test", (req, res) => {
     res.sendFile(path.join(__dirname + '/test.html'));
 });
 
-// app.get("/newuser", (req, res) => {
-//   res.sendFile(path.join(__dirname + '/html/makenewuser.html'));
-// });
+app.get("/newuser", (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/makenewuser.html'));
+});
 
 require("./routes/user.routes.js")(app);
 
