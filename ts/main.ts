@@ -42,4 +42,6 @@ function Random(x) {
 
 Random('Hallo')
 
+function MakeNewUser() {
 
+}
