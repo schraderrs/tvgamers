@@ -34,3 +34,19 @@ exports.findAll = (req, res) => {
     else res.send(data);
   });
 };
+
+exports.delete = (req, res) => {
+  User.remove(req.params.customerId, (err, data) => {
+    if (err) {
+      if (err.kind === "not_found") {
+        res.status(404).send({
+          message: `Not found User with id ${req.params.customerId}.`
+        });
+      } else {
+        res.status(500).send({
+          message: "Could not delete User with id " + req.params.customerId
+        });
+      }
+    } else res.send({ message: `User was deleted successfully!` });
+  });
+};

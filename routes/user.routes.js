@@ -5,6 +5,8 @@ module.exports = app => {
     app.post("/users", users.create);
 
     app.get("/users", users.findAll);
+
+    app.delete("/users/:id", users.delete);
   
     // // Retrieve all Customers
     // app.get("/users", users.findAll);
@@ -20,4 +22,5 @@ module.exports = app => {
   
     // // Create a new Customer
     // app.delete("/users", users.deleteAll);
+    
   };
