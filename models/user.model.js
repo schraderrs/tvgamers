@@ -1,4 +1,4 @@
-const sql = require("../ts/db.ts");
+const sql = require("../public/ts/db.ts");
 
 const User = function (user) {
   this.firstname = user.firstname;
