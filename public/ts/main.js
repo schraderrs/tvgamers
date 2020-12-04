@@ -1,18 +1,48 @@
+const app = express(); 
 
-// const ShowUsers = () => {
-//     // const response = await fetch('http://example.com/movies.json');
-//     // const myJson = await response.json(); //extract JSON from the http response
-//     // document.getElementById("demo").innerHTML = "Paragraph changed!";
-//     console.log('ik doe het')
-// }
-
-
-console.log('hallo')
+const inputFieldFirstName = document.getElementById('input-firstname')
+const inputFieldLastName = document.getElementById('input-lastname')
 
 function ShowUsers() {
-    console.log('ik doe het')
+    // const User = function (firstname, lastname) {
+    //     this.firstname = firstname;
+    //     this.lastname = lastname;
+    // }
+
+    // let newuser = new User(inputFieldFirstName.value, inputFieldLastName.value)
+    app.post("/users", users.create(inputFieldFirstName.value, )); 
+
+    
+
+    app.post('/users', (req, res) => {
+        let user = {
+            firstname: inputFieldFirstName.value,
+            lastname: inputFieldLastName.value
+        }
+        return res.send('Received a POST HTTP method');
+      });
+    console.log(newuser)
 }
 
+
+
+
+// const button = document.getElementById('myButton');
+// button.addEventListener('click', function(e) {
+//   console.log('button was clicked');
+
+//   fetch('/users', {method: 'POST'})
+//     .then(function(response) {
+//       if(response.ok) {
+//         console.log('Click was recorded');
+//         return;
+//       }
+//       throw new Error('Request failed.');
+//     })
+//     .catch(function(error) {
+//       console.log(error);
+//     });
+// });
 
 // let user1 = {
     //     firstName: "Sjon",
