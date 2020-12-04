@@ -4,25 +4,13 @@ module.exports = app => {
     // Create a new Customer
     app.post("/users", users.create);
 
+    app.get("/users/:userId", users.findOne);
+    
     app.get("/users", users.findAll);
 
-    app.delete("/users/:usersId", users.delete);
+    app.put("/users/:userId", users.update);
+
+    app.delete("/users/:userId", users.delete);
 
     app.delete("/users", users.deleteAll);
-  
-    // // Retrieve all Customers
-    // app.get("/users", users.findAll);
-  
-    // // Retrieve a single Customer with customerId
-    // app.get("/users/:usersId", users.findOne);
-  
-    // // Update a Customer with customerId
-    // app.put("/users/:usersId", users.update);
-  
-    // // Delete a Customer with customerId
-    // app.delete("/users/:usersId", users.delete);
-  
-    // // Create a new Customer
-    // app.delete("/users", users.deleteAll);
-    
   };

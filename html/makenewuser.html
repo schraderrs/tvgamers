@@ -7,17 +7,17 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="ts/main.js"></script>
+    <script defer src="ts/main.js"></script>
 
 </head>
 <body>
     <div class='firstname-container'>
         <h1>Noteer uw eerste naam</h1>
-        <input type='text'>
+        <input type='text' id = 'input-firstname' value ="">
     </div>
     <div class='firstname-container'>
         <h1>Noteer uw derde naam</h1>
-        <input type='text'>
+        <input type='text' id = 'input-lastname' value=''>
     </div>
     <div id='test'></div>
     <button id = 'button' onclick = 'ShowUsers()'>Klik mij</button>
