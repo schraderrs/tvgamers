@@ -1,0 +1,157 @@
+body {
+    background: url(../img/background.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: 'Nunito Sans', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#navigationBarList{
+    display: inline-block;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 20px;
+}
+#navigationBarList li{
+    display: inline;
+    width: 100px;
+    margin: 5px 5px;
+    justify-content: space-around;
+    color: white;
+    padding-left: 10%;
+}
+
+#navigationBarList a{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+#navigationBarList h2 {
+    font-size: 36px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: right;
+    width: 8%;
+    align-content: right;
+    margin-top: 20px;
+  }
+
+.chat-img {
+    float: left;
+    margin-right: 15%;
+}
+
+.language-img {
+    float: left;
+    margin-right: 15%;
+}
+
+.account-img {
+    float: right;
+}
+
+.swipe-btn {
+    color: white;
+}
+
+.container {
+    justify-content: center;
+    margin-top: 5%;
+    background: linear-gradient(352.89deg, #151C28 5.4%, #1E283A 42.85%, #151C28 91.59%);
+    align-items: center;
+    box-shadow: 0px 4px 8px 10px rgba(0, 0, 0, 0.25);
+    width: 1200px;
+    height: 800px;
+}
+
+.dislike-btn {
+    background: linear-gradient(101.09deg, #BF1D1D 13.82%, #6F0E0E 105.46%);
+    border: none;
+    border-radius: 22px;
+    width: 220px;
+    height: 58px;
+}
+
+.like-btn {
+    background: linear-gradient(101.09deg, #1A4A98 13.82%, #43A8FF 105.46%);
+    border: none;
+    border-radius: 22px;
+    width: 220px;
+    height: 58px;
+}
+
+.user-img {
+    border-radius: 250px;
+    float: left;
+    padding: 2%;
+}
+
+.information h1 {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.information p {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.information h2 {
+    color: #1A4A98;
+}
+
+.information {
+    float: right;
+    margin-top: 5%;
+    padding-right: 10%;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.ranks {
+    margin-top: 30%;
+    
+}
+
+.ranks p {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ranks h4 {
+    color: #2664B5;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.personal {
+    /* margin-top: 20%; */
+    padding-left: 5%;
+    text-align: left;
+}
+
+.personal p {
+    color: white;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+}
+
+.swipe-btn {
+    align-items: center;
+}
